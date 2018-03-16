@@ -10,7 +10,7 @@ public class solution1 {
 		for(int i = 0; i < portNames.length; i++) {
 			System.out.println(portNames[i]);
 		}
-		 SerialPort serialPort = new SerialPort("COM4");
+		 SerialPort serialPort = new SerialPort("COM4"); 		//writing data to the COM4	
 		    try {
 		        serialPort.openPort();//Open serial port
 		        serialPort.setParams(SerialPort.BAUDRATE_9600, 
@@ -23,7 +23,7 @@ public class solution1 {
 		    catch (SerialPortException ex) {
 		        System.out.println(ex);
 		    }
-    SerialPort serialPort1 = new SerialPort("COM4");
+    SerialPort serialPort1 = new SerialPort("COM4");                // READING DATA FROM THE COM4		
     try {
         serialPort1.openPort();//Open serial port
         serialPort1.setParams(9600, 8, 1, 0);//Set params.
